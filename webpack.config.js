@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const pkg = require('./package.json');
 
 //const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -9,8 +9,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    libraryTarget: 'umd',
-    library: 'my-design-system',
+    library: pkg.name,
+    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [
@@ -31,12 +31,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'index.html'),
-    }),
-    //new BundleAnalyzerPlugin(),
-  ],
   devServer: {
     historyApiFallback: true,
     port: 8008,
