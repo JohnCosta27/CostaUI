@@ -1,5 +1,5 @@
-import Button from './Button';
 import Cdiv from './Cdiv';
 import TextFade from './TextFade';
+import HeaderDiv from './HeaderDiv';
 
-export { Button, Cdiv, TextFade };
+export { Cdiv, TextFade, HeaderDiv };
