@@ -5,12 +5,12 @@ const pkg = require('./package.json');
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
-  mode: 'development',
+  mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'index.js',
     library: pkg.name,
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'umd',
   },
   module: {
     rules: [

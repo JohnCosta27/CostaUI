@@ -1,6 +1,7 @@
 module.exports = {
   content: ['./src/**/*.{js, jsx}'],
-  theme: {
+  theme: {},
+  extend: {
     colors: {
       'polar-night': {
         100: '#4C566A',
@@ -27,7 +28,6 @@ module.exports = {
         purple: '#B48EAD',
       },
     },
-    extend: {},
   },
   variants: {
     extend: {},
