@@ -9,7 +9,7 @@ import clsx from 'clsx';
 // Component
 //============================================================
 
-const Cdiv = ({ className, children }) => {
+const FlexBox = ({ className, children }) => {
   return <div className={clsx('flex justify-center items-center', className)}>{children}</div>;
 };
-export default Cdiv;
+export default FlexBox;
