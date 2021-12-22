@@ -1,4 +1,4 @@
-import Cdiv from './FlexBox';
+import FlexBox from './FlexBox';
 import TextFade from './TextFade';
 import HeaderDiv from './HeaderDiv';
 

@@ -1,6 +1,6 @@
 {
   "name": "costa-ui",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A component library build.",
   "author": "",
   "main": "dist/index.js",
